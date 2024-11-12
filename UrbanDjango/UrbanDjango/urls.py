@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import func_views, ClassViews
 from task4.views import main_page, second_page, third_page
+from task5.views import sign_up_by_html
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +26,6 @@ urlpatterns = [
     path('cls/', ClassViews.as_view()),
     path('main/', main_page),
     path('main/second/', second_page),
-    path('main/third/', third_page) 
+    path('main/third/', third_page),
+    path('signup', sign_up_by_html) 
 ]

@@ -39,3 +39,6 @@ def third_page(request):
         'pages_list': pages_list
     }
     return render(request, TMP_FLDR+'third_page.html', context)
+
+
+
